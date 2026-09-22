@@ -1,0 +1,138 @@
+{
+  "name": "BloodMesh Design System",
+  "version": "2.4.0",
+  "global": {
+    "color": {
+      "primary": {
+        "value": "#DC2626",
+        "type": "color",
+        "description": "Primary Emergency Crimson Red"
+      },
+      "primary-dark": {
+        "value": "#991B1B",
+        "type": "color",
+        "description": "Deep Crimson Red"
+      },
+      "primary-light": {
+        "value": "#EF4444",
+        "type": "color",
+        "description": "Light Crimson Hover"
+      },
+      "primary-tint": {
+        "value": "#FEF2F2",
+        "type": "color",
+        "description": "Subtle Red 50 Background Tint"
+      },
+      "primary-border": {
+        "value": "#FECACA",
+        "type": "color",
+        "description": "Soft Red Border 200"
+      },
+      "background-main": {
+        "value": "#F9FAFB",
+        "type": "color",
+        "description": "Clinical Light Gray 50"
+      },
+      "background-surface": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "Pure Clean White Surface"
+      },
+      "slate-dark": {
+        "value": "#0F172A",
+        "type": "color",
+        "description": "Radar Scope / Dark Matrix Background"
+      },
+      "slate-deep": {
+        "value": "#020617",
+        "type": "color",
+        "description": "Deep Slate 950"
+      },
+      "success-active": {
+        "value": "#10B981",
+        "type": "color",
+        "description": "Live Dispatch Pulsing Green"
+      },
+      "success-tint": {
+        "value": "#ECFDF5",
+        "type": "color",
+        "description": "Success Light Background"
+      },
+      "text-primary": {
+        "value": "#0F172A",
+        "type": "color",
+        "description": "High-legibility dark heading text"
+      },
+      "text-secondary": {
+        "value": "#475569",
+        "type": "color",
+        "description": "Neutral body text"
+      },
+      "text-muted": {
+        "value": "#94A3B8",
+        "type": "color",
+        "description": "Micro-labels and timestamps"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "value": "Plus Jakarta Sans, sans-serif",
+        "type": "fontFamilies"
+      },
+      "h1": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "800",
+        "fontSize": "48px",
+        "lineHeight": "1.15",
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "800",
+        "fontSize": "32px",
+        "lineHeight": "1.2"
+      },
+      "h3": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "1.3"
+      },
+      "body": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "400",
+        "fontSize": "15px",
+        "lineHeight": "1.6"
+      },
+      "badge": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "800",
+        "fontSize": "11px",
+        "textTransform": "uppercase"
+      }
+    },
+    "borderRadius": {
+      "sm": { "value": "6px", "type": "borderRadius" },
+      "md": { "value": "10px", "type": "borderRadius" },
+      "lg": { "value": "16px", "type": "borderRadius" },
+      "xl": { "value": "24px", "type": "borderRadius" },
+      "full": { "value": "9999px", "type": "borderRadius" }
+    },
+    "boxShadow": {
+      "card": {
+        "x": "0",
+        "y": "4px",
+        "blur": "12px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.05)"
+      },
+      "emergency-pulse": {
+        "x": "0",
+        "y": "10px",
+        "blur": "25px",
+        "spread": "0",
+        "color": "rgba(220, 38, 38, 0.35)"
+      }
+    }
+  }
+}

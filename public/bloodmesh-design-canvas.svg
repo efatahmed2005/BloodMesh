@@ -1,0 +1,744 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 3200" width="2400" height="3200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#991B1B"/>
+    </linearGradient>
+    <linearGradient id="radarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B91C1C"/>
+      <stop offset="50%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#991B1B"/>
+    </linearGradient>
+    <filter id="shadowSm" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#DC2626" flood-opacity="0.15"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="2400" height="3200" fill="#F1F5F9" />
+
+  <!-- ========================================== -->
+  <!-- 1. HEADER & ARTBOARD LABELS                -->
+  <!-- ========================================== -->
+  <g id="Artboard-Title">
+    <text x="60" y="70" font-size="32" font-weight="800" fill="#0F172A">BloodMesh UI Kit &amp; Design System</text>
+    <text x="60" y="105" font-size="16" font-weight="500" fill="#64748B">Automated Emergency Blood Routing Network • Desktop (1280px), Mobile (390px), Components &amp; Tokens</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. DESIGN TOKENS PANEL (TOP RIGHT)         -->
+  <!-- ========================================== -->
+  <g id="Color-Tokens" transform="translate(1820, 40)">
+    <rect width="520" height="280" rx="16" fill="#FFFFFF" filter="url(#shadowSm)"/>
+    <text x="24" y="36" font-size="16" font-weight="700" fill="#0F172A">Design Tokens &amp; Colors</text>
+    
+    <!-- Primary Red -->
+    <rect x="24" y="60" width="70" height="70" rx="10" fill="#DC2626"/>
+    <text x="24" y="148" font-size="11" font-weight="700" fill="#0F172A">Crimson Primary</text>
+    <text x="24" y="164" font-size="10" font-weight="500" fill="#64748B">#DC2626</text>
+
+    <!-- Deep Red -->
+    <rect x="110" y="60" width="70" height="70" rx="10" fill="#991B1B"/>
+    <text x="110" y="148" font-size="11" font-weight="700" fill="#0F172A">Dark Crimson</text>
+    <text x="110" y="164" font-size="10" font-weight="500" fill="#64748B">#991B1B</text>
+
+    <!-- Red Tint -->
+    <rect x="196" y="60" width="70" height="70" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+    <text x="196" y="148" font-size="11" font-weight="700" fill="#0F172A">Red Tint 50</text>
+    <text x="196" y="164" font-size="10" font-weight="500" fill="#64748B">#FEF2F2</text>
+
+    <!-- Slate Dark -->
+    <rect x="282" y="60" width="70" height="70" rx="10" fill="#0F172A"/>
+    <text x="282" y="148" font-size="11" font-weight="700" fill="#0F172A">Slate Dark</text>
+    <text x="282" y="164" font-size="10" font-weight="500" fill="#64748B">#0F172A</text>
+
+    <!-- Emerald Success -->
+    <rect x="368" y="60" width="70" height="70" rx="10" fill="#10B981"/>
+    <text x="368" y="148" font-size="11" font-weight="700" fill="#0F172A">Emerald Active</text>
+    <text x="368" y="164" font-size="10" font-weight="500" fill="#64748B">#10B981</text>
+
+    <!-- Typography Specs -->
+    <line x1="24" y1="185" x2="496" y2="185" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="24" y="215" font-size="13" font-weight="700" fill="#0F172A">Typography: Plus Jakarta Sans</text>
+    <text x="24" y="240" font-size="11" font-weight="500" fill="#64748B">H1: 48px/800 | H2: 32px/800 | H3: 18px/700 | Body: 14px/400 | Badge: 11px/800</text>
+    <text x="24" y="260" font-size="11" font-weight="500" fill="#64748B">Shadows: Soft Medical Clean (4px/8px 0.05 opacity) + Crimson Glow</text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 3. DESKTOP ARTBOARD (1280 x 2950)                                        -->
+  <!-- ========================================================================= -->
+  <g id="Desktop-Artboard" transform="translate(60, 150)">
+    <!-- Frame Canvas -->
+    <rect width="1280" height="2950" rx="20" fill="#FFFFFF" filter="url(#shadowSm)"/>
+    <text x="0" y="-12" font-size="14" font-weight="700" fill="#475569">Desktop Viewport (1280 × 2950)</text>
+
+    <!-- 1. Top Announcement Bar -->
+    <g id="Top-Banner">
+      <rect width="1280" height="38" rx="20" fill="url(#bannerGrad)" clip-path="inset(0 0 10 0)"/>
+      <rect y="10" width="1280" height="28" fill="url(#bannerGrad)"/>
+      <rect x="30" y="8" width="170" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="42" cy="19" r="4" fill="#34D399"/>
+      <text x="52" y="23" font-size="10" font-weight="800" fill="#FFFFFF">ROUTING ENGINE ACTIVE</text>
+      <text x="215" y="23" font-size="11" font-weight="500" fill="#FEE2E2">System pinged 14 eligible donors for O- request in Khulna (Zone K-1)</text>
+      <text x="960" y="23" font-size="11" font-weight="600" fill="#FEE2E2">🛡️ 120-Day Medical Filter: Online</text>
+      <rect x="1150" y="8" width="100" height="22" rx="6" fill="#FFFFFF"/>
+      <text x="1165" y="23" font-size="10" font-weight="800" fill="#DC2626">Emergency SOS</text>
+    </g>
+
+    <!-- 2. Sticky Navbar -->
+    <g id="Navbar" transform="translate(0, 38)">
+      <rect width="1280" height="74" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <!-- Brand Logo -->
+      <g transform="translate(40, 16)">
+        <rect width="42" height="42" rx="10" fill="url(#redGrad)" filter="url(#shadowSm)"/>
+        <path d="M21 9 C21 9, 30 18, 30 24 C30 29, 26 33, 21 33 C16 33, 12 29, 12 24 C12 18, 21 9, 21 9 Z" fill="#FFFFFF"/>
+        <text x="52" y="24" font-size="20" font-weight="800" fill="#0F172A">Blood<tspan fill="#DC2626">Mesh</tspan></text>
+        <rect x="156" y="10" width="34" height="18" rx="4" fill="#FEE2E2"/>
+        <text x="162" y="23" font-size="9" font-weight="800" fill="#DC2626">v2.4</text>
+        <text x="52" y="37" font-size="10" font-weight="600" fill="#64748B">Proximity Emergency Routing</text>
+      </g>
+
+      <!-- Nav Links -->
+      <text x="440" y="43" font-size="14" font-weight="700" fill="#DC2626">Home</text>
+      <text x="510" y="43" font-size="14" font-weight="600" fill="#475569">Active Alerts</text>
+      <rect x="595" y="30" width="18" height="18" rx="9" fill="#DC2626"/>
+      <text x="601" y="43" font-size="10" font-weight="800" fill="#FFFFFF">4</text>
+      <text x="635" y="43" font-size="14" font-weight="600" fill="#475569">How It Works</text>
+      <text x="750" y="43" font-size="14" font-weight="600" fill="#475569">120-Day Rule</text>
+      <text x="865" y="43" font-size="14" font-weight="600" fill="#475569">Geo Zones</text>
+
+      <!-- Action Buttons -->
+      <text x="995" y="43" font-size="14" font-weight="700" fill="#334155">Login</text>
+      <rect x="1050" y="19" width="85" height="38" rx="8" fill="#F1F5F9"/>
+      <text x="1068" y="43" font-size="13" font-weight="700" fill="#1E293B">Register</text>
+      <rect x="1145" y="19" width="105" height="38" rx="8" fill="#DC2626" filter="url(#shadowSm)"/>
+      <text x="1160" y="43" font-size="13" font-weight="800" fill="#FFFFFF">Request Blood</text>
+    </g>
+
+    <!-- 3. Hero Section with Live Radar Simulation -->
+    <g id="Hero-Section" transform="translate(0, 112)">
+      <!-- Soft Gradient Hero Background -->
+      <rect width="1280" height="540" fill="#FAFAFA"/>
+      
+      <!-- Hero Left Text Column -->
+      <g transform="translate(60, 50)">
+        <rect width="320" height="30" rx="15" fill="#FEE2E2" stroke="#FECACA" stroke-width="1"/>
+        <circle cx="20" cy="15" r="4" fill="#DC2626"/>
+        <text x="32" y="19" font-size="11" font-weight="700" fill="#991B1B">Proximity-Based Blood Donor Routing Network</text>
+
+        <text x="0" y="85" font-size="44" font-weight="800" fill="#0F172A" line-height="54">
+          Automated Blood Routing for
+        </text>
+        <text x="0" y="135" font-size="44" font-weight="800" fill="#DC2626">
+          Medical Emergencies.
+        </text>
+
+        <text x="0" y="180" font-size="16" font-weight="400" fill="#475569">
+          Stop calling manually. Our algorithm instantly finds and notifies eligible,
+        </text>
+        <text x="0" y="204" font-size="16" font-weight="400" fill="#475569">
+          nearby blood donors in seconds. Safe, secure, and privacy-first.
+        </text>
+
+        <!-- CTA Buttons -->
+        <g transform="translate(0, 240)">
+          <!-- Primary CTA -->
+          <rect width="210" height="54" rx="12" fill="#DC2626" filter="url(#shadowLg)"/>
+          <path d="M26 19 C26 19, 32 26, 32 30 C32 34, 29 37, 26 37 C23 37, 20 34, 20 30 C20 26, 26 19, 26 19 Z" fill="#FFFFFF"/>
+          <text x="44" y="33" font-size="16" font-weight="800" fill="#FFFFFF">Request Blood Now</text>
+          <text x="185" y="34" font-size="16" font-weight="800" fill="#FFFFFF">→</text>
+
+          <!-- Secondary CTA -->
+          <rect x="230" width="180" height="54" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+          <text x="260" y="33" font-size="15" font-weight="700" fill="#0F172A">Register as Donor</text>
+        </g>
+
+        <!-- Metrics Row -->
+        <g transform="translate(0, 340)">
+          <rect width="130" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="16" y="32" font-size="20" font-weight="800" fill="#DC2626">&lt; 45s</text>
+          <text x="16" y="50" font-size="11" font-weight="600" fill="#64748B">Algorithmic Match</text>
+
+          <rect x="145" width="130" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="161" y="32" font-size="20" font-weight="800" fill="#0F172A">120-Day</text>
+          <text x="161" y="50" font-size="11" font-weight="600" fill="#64748B">Safety Enforced</text>
+
+          <rect x="290" width="130" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="306" y="32" font-size="20" font-weight="800" fill="#0F172A">100%</text>
+          <text x="306" y="50" font-size="11" font-weight="600" fill="#64748B">Privacy Proxied</text>
+
+          <rect x="435" width="130" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="451" y="32" font-size="20" font-weight="800" fill="#10B981">99.2%</text>
+          <text x="451" y="50" font-size="11" font-weight="600" fill="#64748B">Response Rate</text>
+        </g>
+      </g>
+
+      <!-- Hero Right Radar Simulation Card -->
+      <g transform="translate(740, 40)">
+        <rect width="480" height="460" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+        
+        <!-- Radar Header -->
+        <g transform="translate(24, 20)">
+          <circle cx="6" cy="6" r="5" fill="#DC2626"/>
+          <text x="20" y="10" font-size="12" font-weight="800" fill="#0F172A">MESH ROUTING RADAR</text>
+          <rect x="330" y="-6" width="100" height="24" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+          <circle cx="342" cy="6" r="3" fill="#10B981"/>
+          <text x="352" y="10" font-size="10" font-weight="700" fill="#065F46">Live Dispatch</text>
+        </g>
+
+        <!-- Circular Radar Scope -->
+        <g transform="translate(24, 60)">
+          <rect width="432" height="230" rx="12" fill="url(#radarGrad)"/>
+          
+          <!-- Concentric rings -->
+          <circle cx="216" cy="115" r="95" fill="none" stroke="#DC2626" stroke-width="1" stroke-opacity="0.25"/>
+          <circle cx="216" cy="115" r="65" fill="none" stroke="#DC2626" stroke-width="1" stroke-opacity="0.35"/>
+          <circle cx="216" cy="115" r="35" fill="none" stroke="#DC2626" stroke-width="1" stroke-opacity="0.5"/>
+          
+          <!-- Center Hospital Hub -->
+          <circle cx="216" cy="115" r="16" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+          <text x="210" y="120" font-size="14" font-weight="900" fill="#FFFFFF">+</text>
+
+          <!-- Pinged Eligible Donor Tag -->
+          <rect x="40" y="35" width="140" height="24" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+          <circle cx="52" cy="47" r="3" fill="#34D399"/>
+          <text x="62" y="51" font-size="10" font-weight="700" fill="#A7F3D0">O- (0.8km • 120d ✓)</text>
+
+          <!-- Locked Match Tag -->
+          <rect x="250" y="165" width="160" height="24" rx="12" fill="#450A0A" stroke="#DC2626" stroke-width="1"/>
+          <text x="262" y="181" font-size="10" font-weight="700" fill="#FECACA">O- (Accepted • 1.4km)</text>
+
+          <!-- Ineligible 120-day filtered tag -->
+          <rect x="270" y="45" width="120" height="22" rx="11" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+          <text x="282" y="59" font-size="9" font-weight="600" fill="#94A3B8" text-decoration="line-through">O+ (84d ago ✕)</text>
+
+          <text x="14" y="218" font-size="9" font-weight="600" fill="#64748B">Zone: Khulna Medical [22.8456° N, 89.5403° E]</text>
+        </g>
+
+        <!-- Radar Stats Matrix -->
+        <g transform="translate(24, 305)">
+          <text x="0" y="18" font-size="12" font-weight="500" fill="#64748B">Active Search Radius:</text>
+          <text x="432" y="18" font-size="12" font-weight="800" fill="#0F172A" text-anchor="end">4.0 km (Micro-Zone 1)</text>
+
+          <text x="0" y="42" font-size="12" font-weight="500" fill="#64748B">120-Day Rule Audit:</text>
+          <text x="432" y="42" font-size="12" font-weight="800" fill="#10B981" text-anchor="end">Auto-Filtered 100%</text>
+
+          <text x="0" y="66" font-size="12" font-weight="500" fill="#64748B">Privacy Mode:</text>
+          <text x="432" y="66" font-size="12" font-weight="800" fill="#0F172A" text-anchor="end">Zero Direct Contact Leak</text>
+
+          <rect y="84" width="432" height="38" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+          <text x="216" y="108" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">⚡ Test Live Emergency Broadcast</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. Active Requests Section -->
+    <g id="Live-Alerts-Section" transform="translate(60, 690)">
+      <!-- Section Title -->
+      <rect width="130" height="24" rx="12" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+      <circle cx="12" cy="12" r="3" fill="#DC2626"/>
+      <text x="22" y="16" font-size="10" font-weight="800" fill="#DC2626">LIVE NETWORK FEED</text>
+
+      <text x="0" y="60" font-size="30" font-weight="800" fill="#0F172A">Active Requests in Your Region</text>
+      <text x="0" y="85" font-size="14" font-weight="500" fill="#64748B">Real-time emergency blood broadcasts searching for verified donors within geographic zones.</text>
+
+      <!-- Region Filter Tabs -->
+      <g transform="translate(760, 40)">
+        <rect width="50" height="32" rx="8" fill="#DC2626"/>
+        <text x="18" y="21" font-size="12" font-weight="700" fill="#FFFFFF">All</text>
+        <rect x="58" width="70" height="32" rx="8" fill="#F1F5F9"/>
+        <text x="73" y="21" font-size="12" font-weight="700" fill="#334155">Khulna</text>
+        <rect x="136" width="65" height="32" rx="8" fill="#F1F5F9"/>
+        <text x="151" y="21" font-size="12" font-weight="700" fill="#334155">Dhaka</text>
+        <rect x="209" width="95" height="32" rx="8" fill="#F1F5F9"/>
+        <text x="218" y="21" font-size="12" font-weight="700" fill="#334155">Chattogram</text>
+        <rect x="312" width="75" height="32" rx="8" fill="#F1F5F9"/>
+        <text x="323" y="21" font-size="12" font-weight="700" fill="#334155">Rajshahi</text>
+      </g>
+
+      <!-- 3 Emergency Alert Cards Grid -->
+      <g transform="translate(0, 120)">
+        
+        <!-- Card 1: O- Khulna -->
+        <g transform="translate(0, 0)">
+          <rect width="365" height="330" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          
+          <!-- Top Row: Badge & Urgency -->
+          <rect x="20" y="20" width="115" height="36" rx="8" fill="url(#redGrad)"/>
+          <text x="32" y="43" font-size="14" font-weight="800" fill="#FFFFFF">O-Negative</text>
+          <rect x="145" y="24" width="60" height="24" rx="6" fill="#FEE2E2"/>
+          <text x="153" y="40" font-size="10" font-weight="800" fill="#DC2626">2 Units</text>
+          
+          <text x="345" y="32" font-size="10" font-weight="800" fill="#DC2626" text-anchor="end">CRITICAL</text>
+          <text x="345" y="46" font-size="9" font-weight="600" fill="#94A3B8" text-anchor="end">BM-2026-089</text>
+
+          <!-- Location Info -->
+          <text x="20" y="85" font-size="16" font-weight="800" fill="#0F172A">Khulna Medical College Hospital</text>
+          <text x="20" y="105" font-size="12" font-weight="500" fill="#64748B">ICU Block B, Ward 4 • Zone K-1 (3.8 km)</text>
+
+          <!-- Status Box -->
+          <rect x="20" y="130" width="325" height="100" rx="10" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+          
+          <text x="35" y="156" font-size="11" font-weight="500" fill="#64748B">Network Status:</text>
+          <circle cx="210" cy="153" r="3" fill="#10B981"/>
+          <text x="218" y="156" font-size="11" font-weight="700" fill="#065F46">Broadcasting to donors...</text>
+
+          <text x="35" y="186" font-size="11" font-weight="500" fill="#64748B">Broadcast Time:</text>
+          <text x="330" y="186" font-size="11" font-weight="700" fill="#1E293B" text-anchor="end">Requested 10 mins ago</text>
+
+          <line x1="35" y1="198" x2="330" y2="198" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="35" y="218" font-size="11" font-weight="500" fill="#64748B">Eligible Donors Pinged:</text>
+          <text x="330" y="218" font-size="11" font-weight="800" fill="#0F172A" text-anchor="end">14 Verified Donors</text>
+
+          <!-- Action Buttons -->
+          <rect x="20" y="255" width="220" height="44" rx="10" fill="#DC2626"/>
+          <text x="130" y="282" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">Respond as Donor</text>
+          <rect x="250" y="255" width="95" height="44" rx="10" fill="#F1F5F9"/>
+          <text x="297" y="282" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">Details</text>
+        </g>
+
+        <!-- Card 2: A+ Dhaka -->
+        <g transform="translate(395, 0)">
+          <rect width="365" height="330" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          
+          <rect x="20" y="20" width="105" height="36" rx="8" fill="url(#redGrad)"/>
+          <text x="32" y="43" font-size="14" font-weight="800" fill="#FFFFFF">A-Positive</text>
+          <rect x="135" y="24" width="60" height="24" rx="6" fill="#FEE2E2"/>
+          <text x="143" y="40" font-size="10" font-weight="800" fill="#DC2626">3 Units</text>
+          
+          <text x="345" y="32" font-size="10" font-weight="800" fill="#EA580C" text-anchor="end">HIGH PRIORITY</text>
+          <text x="345" y="46" font-size="9" font-weight="600" fill="#94A3B8" text-anchor="end">BM-2026-090</text>
+
+          <text x="20" y="85" font-size="16" font-weight="800" fill="#0F172A">Dhaka Medical College Hospital</text>
+          <text x="20" y="105" font-size="12" font-weight="500" fill="#64748B">Emergency Trauma Center • Zone D-3 (2.4 km)</text>
+
+          <rect x="20" y="130" width="325" height="100" rx="10" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+          
+          <text x="35" y="156" font-size="11" font-weight="500" fill="#64748B">Network Status:</text>
+          <circle cx="210" cy="153" r="3" fill="#10B981"/>
+          <text x="218" y="156" font-size="11" font-weight="700" fill="#065F46">Broadcasting to donors...</text>
+
+          <text x="35" y="186" font-size="11" font-weight="500" fill="#64748B">Broadcast Time:</text>
+          <text x="330" y="186" font-size="11" font-weight="700" fill="#1E293B" text-anchor="end">Requested 18 mins ago</text>
+
+          <line x1="35" y1="198" x2="330" y2="198" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="35" y="218" font-size="11" font-weight="500" fill="#64748B">Eligible Donors Pinged:</text>
+          <text x="330" y="218" font-size="11" font-weight="800" fill="#0F172A" text-anchor="end">31 Verified Donors</text>
+
+          <rect x="20" y="255" width="220" height="44" rx="10" fill="#DC2626"/>
+          <text x="130" y="282" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">Respond as Donor</text>
+          <rect x="250" y="255" width="95" height="44" rx="10" fill="#F1F5F9"/>
+          <text x="297" y="282" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">Details</text>
+        </g>
+
+        <!-- Card 3: B- Chattogram -->
+        <g transform="translate(790, 0)">
+          <rect width="365" height="330" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          
+          <rect x="20" y="20" width="105" height="36" rx="8" fill="url(#redGrad)"/>
+          <text x="32" y="43" font-size="14" font-weight="800" fill="#FFFFFF">B-Negative</text>
+          <rect x="135" y="24" width="60" height="24" rx="6" fill="#FEE2E2"/>
+          <text x="146" y="40" font-size="10" font-weight="800" fill="#DC2626">1 Unit</text>
+          
+          <text x="345" y="32" font-size="10" font-weight="800" fill="#DC2626" text-anchor="end">URGENT</text>
+          <text x="345" y="46" font-size="9" font-weight="600" fill="#94A3B8" text-anchor="end">BM-2026-091</text>
+
+          <text x="20" y="85" font-size="16" font-weight="800" fill="#0F172A">Chattogram General Hospital</text>
+          <text x="20" y="105" font-size="12" font-weight="500" fill="#64748B">Pediatric Surgery • Zone C-2 (4.5 km)</text>
+
+          <rect x="20" y="130" width="325" height="100" rx="10" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+          
+          <text x="35" y="156" font-size="11" font-weight="500" fill="#64748B">Network Status:</text>
+          <circle cx="210" cy="153" r="3" fill="#10B981"/>
+          <text x="218" y="156" font-size="11" font-weight="700" fill="#065F46">Broadcasting to donors...</text>
+
+          <text x="35" y="186" font-size="11" font-weight="500" fill="#64748B">Broadcast Time:</text>
+          <text x="330" y="186" font-size="11" font-weight="700" fill="#1E293B" text-anchor="end">Requested 25 mins ago</text>
+
+          <line x1="35" y1="198" x2="330" y2="198" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="35" y="218" font-size="11" font-weight="500" fill="#64748B">Eligible Donors Pinged:</text>
+          <text x="330" y="218" font-size="11" font-weight="800" fill="#0F172A" text-anchor="end">8 Verified Donors</text>
+
+          <rect x="20" y="255" width="220" height="44" rx="10" fill="#DC2626"/>
+          <text x="130" y="282" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">Respond as Donor</text>
+          <rect x="250" y="255" width="95" height="44" rx="10" fill="#F1F5F9"/>
+          <text x="297" y="282" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">Details</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 5. How It Works (4 Columns) -->
+    <g id="How-It-Works-Section" transform="translate(60, 1200)">
+      <text x="580" y="30" font-size="12" font-weight="800" fill="#DC2626" text-anchor="middle">ALGORITHMIC PROTOCOL</text>
+      <text x="580" y="65" font-size="30" font-weight="800" fill="#0F172A" text-anchor="middle">How BloodMesh Works</text>
+      <text x="580" y="90" font-size="14" font-weight="500" fill="#64748B" text-anchor="middle">Automated medical dispatch engine replacing chaotic social media calls with cryptographic proximity matching.</text>
+
+      <g transform="translate(0, 130)">
+        <!-- Step 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="270" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          <rect x="20" y="20" width="44" height="44" rx="10" fill="#FEE2E2"/>
+          <text x="35" y="48" font-size="18" fill="#DC2626">📝</text>
+          <text x="240" y="45" font-size="24" font-weight="900" fill="#E2E8F0" text-anchor="end">01</text>
+          
+          <text x="20" y="95" font-size="16" font-weight="800" fill="#0F172A">Log Request</text>
+          <text x="20" y="125" font-size="12" font-weight="400" fill="#64748B">User or hospital submits</text>
+          <text x="20" y="145" font-size="12" font-weight="400" fill="#64748B">emergency details, blood group,</text>
+          <text x="20" y="165" font-size="12" font-weight="400" fill="#64748B">and verified coordinates.</text>
+          
+          <text x="20" y="205" font-size="11" font-weight="700" fill="#DC2626">Instant dispatch trigger →</text>
+        </g>
+
+        <!-- Step 2 -->
+        <g transform="translate(295, 0)">
+          <rect width="270" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          <rect x="20" y="20" width="44" height="44" rx="10" fill="#FEE2E2"/>
+          <text x="35" y="48" font-size="18" fill="#DC2626">🛡️</text>
+          <text x="240" y="45" font-size="24" font-weight="900" fill="#E2E8F0" text-anchor="end">02</text>
+          
+          <text x="20" y="95" font-size="16" font-weight="800" fill="#0F172A">Algorithmic Filter</text>
+          <text x="20" y="125" font-size="12" font-weight="400" fill="#64748B">System queries donor registry</text>
+          <text x="20" y="145" font-size="12" font-weight="400" fill="#64748B">and enforces 120-day medical</text>
+          <text x="20" y="165" font-size="12" font-weight="400" fill="#64748B">biological recovery safety.</text>
+          
+          <text x="20" y="205" font-size="11" font-weight="700" fill="#DC2626">120-Day Safety Guard →</text>
+        </g>
+
+        <!-- Step 3 -->
+        <g transform="translate(590, 0)">
+          <rect width="270" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          <rect x="20" y="20" width="44" height="44" rx="10" fill="#FEE2E2"/>
+          <text x="35" y="48" font-size="18" fill="#DC2626">📡</text>
+          <text x="240" y="45" font-size="24" font-weight="900" fill="#E2E8F0" text-anchor="end">03</text>
+          
+          <text x="20" y="95" font-size="16" font-weight="800" fill="#0F172A">Proximity Routing</text>
+          <text x="20" y="125" font-size="12" font-weight="400" fill="#64748B">Instantly pings registered,</text>
+          <text x="20" y="145" font-size="12" font-weight="400" fill="#64748B">verified donors in the exact</text>
+          <text x="20" y="165" font-size="12" font-weight="400" fill="#64748B">city zone radius (1–5 km).</text>
+          
+          <text x="20" y="205" font-size="11" font-weight="700" fill="#DC2626">Sub-second zone ping →</text>
+        </g>
+
+        <!-- Step 4 -->
+        <g transform="translate(885, 0)">
+          <rect width="270" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+          <rect x="20" y="20" width="44" height="44" rx="10" fill="#FEE2E2"/>
+          <text x="35" y="48" font-size="18" fill="#DC2626">🔒</text>
+          <text x="240" y="45" font-size="24" font-weight="900" fill="#E2E8F0" text-anchor="end">04</text>
+          
+          <text x="20" y="95" font-size="16" font-weight="800" fill="#0F172A">Secure Match</text>
+          <text x="20" y="125" font-size="12" font-weight="400" fill="#64748B">First donor to accept locks the</text>
+          <text x="20" y="145" font-size="12" font-weight="400" fill="#64748B">request. Numbers are strictly</text>
+          <text x="20" y="165" font-size="12" font-weight="400" fill="#64748B">masked via privacy proxies.</text>
+          
+          <text x="20" y="205" font-size="11" font-weight="700" fill="#10B981">Privacy &amp; Safety Lock ✓</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 6. 120-Day Rule Calculator Section -->
+    <g id="120-Day-Calculator-Section" transform="translate(60, 1630)">
+      <rect width="1160" height="340" rx="24" fill="#0F172A" filter="url(#shadowSm)"/>
+      
+      <g transform="translate(50, 50)">
+        <rect width="160" height="24" rx="12" fill="rgba(220,38,38,0.2)"/>
+        <text x="14" y="16" font-size="10" font-weight="800" fill="#FCA5A5">MEDICAL STANDARD RULE</text>
+
+        <text x="0" y="65" font-size="32" font-weight="800" fill="#FFFFFF">Why the 120-Day Donation Rule?</text>
+        <text x="0" y="105" font-size="14" font-weight="400" fill="#94A3B8">Human red blood cells require approximately 120 days to complete a natural</text>
+        <text x="0" y="125" font-size="14" font-weight="400" fill="#94A3B8">regeneration cycle and safely restore iron ferritin stores. BloodMesh</text>
+        <text x="0" y="145" font-size="14" font-weight="400" fill="#94A3B8">enforces this rule algorithmically to protect our heroes.</text>
+
+        <g transform="translate(0, 185)">
+          <text x="0" y="0" font-size="13" font-weight="700" fill="#34D399">✓ Prevents Donor Anemia</text>
+          <text x="200" y="0" font-size="13" font-weight="700" fill="#34D399">✓ Highest Blood Viability</text>
+          <text x="400" y="0" font-size="13" font-weight="700" fill="#34D399">✓ Automated Cooldown</text>
+        </g>
+      </g>
+
+      <!-- Interactive Calculator Card inside -->
+      <g transform="translate(680, 40)">
+        <rect width="430" height="260" rx="16" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="24" y="36" font-size="16" font-weight="700" fill="#FFFFFF">Check Your Donation Eligibility</text>
+        <text x="24" y="58" font-size="12" font-weight="400" fill="#94A3B8">Select your last blood donation date to calculate status.</text>
+
+        <text x="24" y="96" font-size="11" font-weight="600" fill="#CBD5E1">When did you last donate?</text>
+        <rect x="24" y="108" width="382" height="42" rx="8" fill="#020617" stroke="#334155" stroke-width="1"/>
+        <text x="40" y="134" font-size="13" font-weight="500" fill="#94A3B8">YYYY-MM-DD (e.g. 2026-04-15)</text>
+
+        <!-- Eligibility Result Box -->
+        <rect x="24" y="165" width="382" height="40" rx="8" fill="#064E3B" stroke="#059669" stroke-width="1"/>
+        <text x="40" y="190" font-size="12" font-weight="700" fill="#6EE7B7">✓ Status: Eligible to Donate (142 days past rule)</text>
+
+        <rect x="24" y="215" width="382" height="34" rx="8" fill="#DC2626"/>
+        <text x="215" y="237" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">Register with BloodMesh Network</text>
+      </g>
+    </g>
+
+    <!-- 7. Geographic Zones & Matrix -->
+    <g id="Geo-Zones-Section" transform="translate(60, 2030)">
+      <g transform="translate(0, 0)">
+        <text x="0" y="20" font-size="11" font-weight="800" fill="#DC2626">GEO-FENCING &amp; PROXIMITY ROUTING</text>
+        <text x="0" y="55" font-size="28" font-weight="800" fill="#0F172A">Precision Micro-Zones for Rapid Response</text>
+        <text x="0" y="85" font-size="14" font-weight="400" fill="#64748B">Emergencies do not allow time for cross-city traffic delays. BloodMesh</text>
+        <text x="0" y="105" font-size="14" font-weight="400" fill="#64748B">divides cities into responsive 3km–5km micro-zones.</text>
+
+        <!-- Zone Items -->
+        <g transform="translate(0, 130)">
+          <rect width="520" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="24" cy="23" r="4" fill="#DC2626"/>
+          <text x="36" y="27" font-size="12" font-weight="700" fill="#0F172A">Zone K-1: Khulna Medical &amp; Boyra Sector</text>
+          <text x="500" y="27" font-size="12" font-weight="600" fill="#64748B" text-anchor="end">142 Active Donors</text>
+
+          <rect y="58" width="520" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="24" cy="81" r="4" fill="#DC2626"/>
+          <text x="36" y="85" font-size="12" font-weight="700" fill="#0F172A">Zone D-3: Dhaka Central Hospital &amp; Shahbagh</text>
+          <text x="500" y="85" font-size="12" font-weight="600" fill="#64748B" text-anchor="end">388 Active Donors</text>
+
+          <rect y="116" width="520" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="24" cy="139" r="4" fill="#DC2626"/>
+          <text x="36" y="143" font-size="12" font-weight="700" fill="#0F172A">Zone C-2: Chattogram Medical &amp; Panchlaish</text>
+          <text x="500" y="143" font-size="12" font-weight="600" fill="#64748B" text-anchor="end">215 Active Donors</text>
+        </g>
+      </g>
+
+      <!-- Matrix Grid -->
+      <g transform="translate(580, 20)">
+        <rect width="580" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+        <text x="24" y="34" font-size="15" font-weight="800" fill="#0F172A">Live Zone Dispatch Matrix</text>
+        
+        <g transform="translate(24, 55)">
+          <rect width="250" height="90" rx="12" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+          <text x="20" y="38" font-size="28" font-weight="900" fill="#DC2626">4.2 km</text>
+          <text x="20" y="60" font-size="12" font-weight="700" fill="#0F172A">Average Dispatch Radius</text>
+          <text x="20" y="76" font-size="10" font-weight="500" fill="#64748B">Ensures arrival under 25 mins</text>
+
+          <rect x="270" width="250" height="90" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="290" y="38" font-size="28" font-weight="900" fill="#0F172A">100%</text>
+          <text x="290" y="60" font-size="12" font-weight="700" fill="#0F172A">Masked Phone Numbers</text>
+          <text x="290" y="76" font-size="10" font-weight="500" fill="#64748B">No phone leaks to public</text>
+
+          <rect y="105" width="250" height="90" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="20" y="143" font-size="28" font-weight="900" fill="#0F172A">1:1</text>
+          <text x="20" y="165" font-size="12" font-weight="700" fill="#0F172A">Request Locking</text>
+          <text x="20" y="181" font-size="10" font-weight="500" fill="#64748B">Prevents donor overcrowding</text>
+
+          <rect x="270" y="105" width="250" height="90" rx="12" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+          <text x="290" y="143" font-size="28" font-weight="900" fill="#047857">0s</text>
+          <text x="290" y="165" font-size="12" font-weight="700" fill="#065F46">Manual Delay</text>
+          <text x="290" y="181" font-size="10" font-weight="500" fill="#047857">Fully automated routing</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 8. Footer -->
+    <g id="Footer" transform="translate(0, 2600)">
+      <rect width="1280" height="350" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <g transform="translate(60, 50)">
+        <!-- Brand -->
+        <text x="0" y="24" font-size="22" font-weight="800" fill="#0F172A">Blood<tspan fill="#DC2626">Mesh</tspan></text>
+        <text x="0" y="55" font-size="13" font-weight="400" fill="#64748B">Automated, proximity-based blood donor routing network.</text>
+        <text x="0" y="75" font-size="13" font-weight="400" fill="#64748B">Algorithmic emergency matching with 120-day compliance safety.</text>
+        <text x="0" y="110" font-size="11" font-weight="600" fill="#94A3B8">v2.4.0-PROD • ISO 27001 Protocol</text>
+
+        <!-- Column 2 -->
+        <g transform="translate(480, 0)">
+          <text x="0" y="20" font-size="12" font-weight="800" fill="#0F172A">EMERGENCY NETWORK</text>
+          <text x="0" y="50" font-size="13" font-weight="500" fill="#475569">Active Live Alerts</text>
+          <text x="0" y="75" font-size="13" font-weight="500" fill="#475569">Routing Algorithm</text>
+          <text x="0" y="100" font-size="13" font-weight="500" fill="#475569">120-Day Medical Rule</text>
+          <text x="0" y="125" font-size="13" font-weight="500" fill="#475569">Geographic Zones</text>
+        </g>
+
+        <!-- Column 3 -->
+        <g transform="translate(740, 0)">
+          <text x="0" y="20" font-size="12" font-weight="800" fill="#0F172A">PLATFORM &amp; LEGAL</text>
+          <text x="0" y="50" font-size="13" font-weight="500" fill="#475569">Privacy Policy</text>
+          <text x="0" y="75" font-size="13" font-weight="500" fill="#475569">Terms of Service</text>
+          <text x="0" y="100" font-size="13" font-weight="500" fill="#475569">Contact Emergency Desk</text>
+          <text x="0" y="125" font-size="13" font-weight="500" fill="#475569">Developer API</text>
+        </g>
+
+        <!-- Bottom Copyright -->
+        <line x1="0" y1="180" x2="1160" y2="180" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="0" y="215" font-size="12" font-weight="500" fill="#64748B">© 2026 BloodMesh Network. Built for emergency response.</text>
+        <circle cx="1030" cy="211" r="4" fill="#10B981"/>
+        <text x="1042" y="215" font-size="12" font-weight="700" fill="#065F46">All Systems Operational</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. MOBILE ARTBOARD (390 x 2050)                                          -->
+  <!-- ========================================================================= -->
+  <g id="Mobile-Artboard" transform="translate(1380, 360)">
+    <rect width="390" height="2050" rx="24" fill="#FFFFFF" filter="url(#shadowSm)"/>
+    <text x="0" y="-12" font-size="14" font-weight="700" fill="#475569">Mobile Viewport (390 × 2050)</text>
+
+    <!-- Mobile Top Banner -->
+    <rect width="390" height="34" rx="24" fill="url(#bannerGrad)" clip-path="inset(0 0 10 0)"/>
+    <rect y="10" width="390" height="24" fill="url(#bannerGrad)"/>
+    <circle cx="20" cy="22" r="3" fill="#34D399"/>
+    <text x="30" y="26" font-size="10" font-weight="800" fill="#FFFFFF">ROUTING ENGINE ACTIVE (Zone K-1)</text>
+
+    <!-- Mobile Header -->
+    <g transform="translate(0, 34)">
+      <rect width="390" height="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="20" y="10" width="38" height="38" rx="8" fill="url(#redGrad)"/>
+      <path d="M39 19 C39 19, 45 25, 45 29 C45 33, 42 36, 39 36 C36 36, 33 33, 33 29 C33 25, 39 19, 39 19 Z" fill="#FFFFFF"/>
+      <text x="68" y="34" font-size="18" font-weight="800" fill="#0F172A">Blood<tspan fill="#DC2626">Mesh</tspan></text>
+      
+      <!-- Mobile SOS & Menu -->
+      <rect x="250" y="15" width="55" height="30" rx="6" fill="#DC2626"/>
+      <text x="264" y="34" font-size="11" font-weight="800" fill="#FFFFFF">SOS</text>
+      
+      <rect x="320" y="15" width="45" height="30" rx="6" fill="#F1F5F9"/>
+      <text x="335" y="34" font-size="14" font-weight="800" fill="#0F172A">≡</text>
+    </g>
+
+    <!-- Mobile Hero -->
+    <g transform="translate(20, 115)">
+      <rect width="250" height="24" rx="12" fill="#FEE2E2"/>
+      <text x="12" y="16" font-size="9" font-weight="800" fill="#DC2626">PROXIMITY BLOOD ROUTING</text>
+
+      <text x="0" y="55" font-size="24" font-weight="800" fill="#0F172A">Automated Blood</text>
+      <text x="0" y="85" font-size="24" font-weight="800" fill="#DC2626">Routing for Emergencies.</text>
+      
+      <text x="0" y="120" font-size="12" font-weight="400" fill="#475569">Stop calling manually. Our algorithm</text>
+      <text x="0" y="138" font-size="12" font-weight="400" fill="#475569">notifies eligible nearby donors in seconds.</text>
+
+      <!-- Stacked Buttons -->
+      <rect y="160" width="350" height="46" rx="10" fill="#DC2626"/>
+      <text x="175" y="188" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">Request Blood Now →</text>
+
+      <rect y="216" width="350" height="46" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+      <text x="175" y="244" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Register as Donor</text>
+
+      <!-- Mobile Radar Miniature -->
+      <g transform="translate(0, 280)">
+        <rect width="350" height="180" rx="14" fill="url(#radarGrad)"/>
+        <circle cx="175" cy="90" r="60" fill="none" stroke="#DC2626" stroke-width="1" stroke-opacity="0.3"/>
+        <circle cx="175" cy="90" r="30" fill="none" stroke="#DC2626" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="175" cy="90" r="10" fill="#DC2626"/>
+        <rect x="20" y="20" width="110" height="20" rx="10" fill="#064E3B"/>
+        <text x="30" y="34" font-size="9" font-weight="700" fill="#A7F3D0">O- (0.8km • 120d ✓)</text>
+      </g>
+
+      <!-- Mobile Alert Card -->
+      <g transform="translate(0, 485)">
+        <text x="0" y="20" font-size="16" font-weight="800" fill="#0F172A">Active Requests</text>
+
+        <rect y="35" width="350" height="250" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+        <rect x="15" y="50" width="95" height="30" rx="6" fill="url(#redGrad)"/>
+        <text x="24" y="70" font-size="12" font-weight="800" fill="#FFFFFF">O-Negative</text>
+        <text x="335" y="65" font-size="10" font-weight="800" fill="#DC2626" text-anchor="end">CRITICAL</text>
+
+        <text x="15" y="105" font-size="14" font-weight="800" fill="#0F172A">Khulna Medical College</text>
+        <text x="15" y="125" font-size="11" font-weight="500" fill="#64748B">ICU Block B • Zone K-1 (3.8 km)</text>
+
+        <rect x="15" y="140" width="320" height="60" rx="8" fill="#F8FAFC"/>
+        <circle cx="30" cy="160" r="3" fill="#10B981"/>
+        <text x="38" y="164" font-size="11" font-weight="700" fill="#065F46">Broadcasting to donors...</text>
+        <text x="30" y="186" font-size="11" font-weight="500" fill="#64748B">Requested 10 mins ago • 14 Pinged</text>
+
+        <rect x="15" y="215" width="320" height="38" rx="8" fill="#DC2626"/>
+        <text x="175" y="238" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">Respond as Donor</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 5. COMPONENT LIBRARY & MODAL PREVIEW (RIGHT BOTTOM)                     -->
+  <!-- ========================================================================= -->
+  <g id="Component-Library" transform="translate(1820, 360)">
+    <rect width="520" height="640" rx="16" fill="#FFFFFF" filter="url(#shadowSm)"/>
+    <text x="24" y="36" font-size="16" font-weight="700" fill="#0F172A">Interactive Modal Component Spec</text>
+    
+    <!-- Modal Frame Preview -->
+    <g transform="translate(24, 60)">
+      <rect width="472" height="540" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadowLg)"/>
+      
+      <!-- Modal Header -->
+      <g transform="translate(20, 20)">
+        <rect width="36" height="36" rx="8" fill="#DC2626"/>
+        <path d="M18 10 C18 10, 23 16, 23 20 C23 23, 21 26, 18 26 C15 26, 13 23, 13 20 C13 16, 18 10, 18 10 Z" fill="#FFFFFF"/>
+        <text x="48" y="20" font-size="14" font-weight="800" fill="#0F172A">Broadcast Emergency Blood Request</text>
+        <text x="48" y="35" font-size="10" font-weight="500" fill="#64748B">Algorithm will notify verified donors in zone instantly.</text>
+        <text x="420" y="24" font-size="16" font-weight="600" fill="#94A3B8">✕</text>
+      </g>
+
+      <!-- Blood Group Selectors -->
+      <g transform="translate(20, 85)">
+        <text x="0" y="0" font-size="11" font-weight="700" fill="#334155">Required Blood Group *</text>
+        <g transform="translate(0, 10)">
+          <rect width="50" height="32" rx="6" fill="#DC2626"/>
+          <text x="18" y="20" font-size="11" font-weight="800" fill="#FFFFFF">O-</text>
+
+          <rect x="56" width="50" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="73" y="20" font-size="11" font-weight="700" fill="#334155">O+</text>
+
+          <rect x="112" width="50" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="129" y="20" font-size="11" font-weight="700" fill="#334155">A-</text>
+
+          <rect x="168" width="50" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="185" y="20" font-size="11" font-weight="700" fill="#334155">A+</text>
+
+          <rect x="224" width="50" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="241" y="20" font-size="11" font-weight="700" fill="#334155">B-</text>
+
+          <rect x="280" width="50" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="297" y="20" font-size="11" font-weight="700" fill="#334155">B+</text>
+
+          <rect x="336" width="50" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="349" y="20" font-size="10" font-weight="700" fill="#334155">AB-</text>
+
+          <rect x="392" width="40" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="403" y="20" font-size="10" font-weight="700" fill="#334155">AB+</text>
+        </g>
+      </g>
+
+      <!-- Input Fields -->
+      <g transform="translate(20, 160)">
+        <text x="0" y="0" font-size="11" font-weight="700" fill="#334155">Hospital / Medical Center *</text>
+        <rect y="10" width="432" height="38" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="14" y="34" font-size="12" font-weight="500" fill="#0F172A">Khulna Medical College Hospital</text>
+
+        <text x="0" y="70" font-size="11" font-weight="700" fill="#334155">City Zone Radius</text>
+        <rect y="80" width="432" height="38" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="14" y="104" font-size="12" font-weight="500" fill="#0F172A">Khulna Central (Zone K-1 • 3.5 km)</text>
+      </g>
+
+      <!-- Privacy Mask Toggle Box -->
+      <g transform="translate(20, 310)">
+        <rect width="432" height="54" rx="10" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+        <text x="16" y="24" font-size="11" font-weight="700" fill="#991B1B">🔒 Privacy Proxy Masking</text>
+        <text x="16" y="42" font-size="10" font-weight="400" fill="#64748B">Keep phone number confidential until donor confirms</text>
+        <rect x="385" y="18" width="30" height="18" rx="9" fill="#DC2626"/>
+        <circle cx="406" cy="27" r="7" fill="#FFFFFF"/>
+      </g>
+
+      <!-- Submit Action -->
+      <g transform="translate(20, 385)">
+        <rect width="432" height="46" rx="10" fill="#DC2626" filter="url(#shadowSm)"/>
+        <text x="216" y="28" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">Broadcast Request to Network</text>
+      </g>
+    </g>
+  </g>
+
+</svg>
